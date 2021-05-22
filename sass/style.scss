@@ -1,0 +1,58 @@
+// Global Styles
+//Fonts
+@font-face {
+    font-family: "TajawalRegular";
+    src: url("../fonts/Tajawal-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TajawalMedium";
+    src: url("../fonts/Tajawal-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TajawalBold";
+    src: url("../fonts/Tajawal-Bold.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TajawalLight";
+    src: url("../fonts/Tajawal-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+//Variables
+$black1:#212022;
+$black2: #1E1D1F;
+$yellow: #FFC700;
+body {
+    font-family: 'TajawalRegular', sans-serif;
+    background-color: $black1;
+}
+
+.container-fluid {
+    padding-left: 60px;
+    padding-right: 60px;
+    @media (max-width: 767px) {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+// -----------------------
+.main {
+    &__navbar {
+        background-color: $black1;
+        padding: .5rem 0;
+        &__nav {
+            &__list {}
+        }
+    }
+}
