@@ -2,34 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyper Filters</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="sass/style.css">
-    <style>
-        .masthead {
-            height: 100vh;
-            min-height: 500px;
-            background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyber Filters</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="sass/style.css" />
 </head>
 
 <body>
     <div class="main">
         <nav class="main__navbar navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="main__navbar--logo navbar-brand" href="#"><img src="images/logo.svg" alt=""></a>
+                <a class="main__navbar--logo navbar-brand" href="#"><img src="images/logo.svg" alt="" /></a>
                 <button class="main__navbar--toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="main__navbar__nav collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="main__navbar__nav__list navbar-nav ml-auto">
+                    <ul class="
+                main__navbar__nav__list
+                navbar-nav
+                ml-auto
+                align-items-center
+              ">
                         <li class="main__navbar__nav__list--item nav-item active">
                             <a class="nav-link" href="#">Services
                                 <span class="sr-only">(current)</span>
@@ -48,24 +44,146 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Full Page Image Header with Vertically Centered Content -->
-        <header class="masthead">
-            <div class="container h-100">
+        <header class="main__masthead">
+            <div class="container-fluid h-100">
                 <div class="row h-100 align-items-center">
-                    <div class="col-12 text-center">
-                        <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-                        <p class="lead">A great starter layout for a landing page</p>
+                    <div class="col-12 col-md-6 text-center text-md-left">
+                        <h1 class="main__masthead--title">
+                            Intelligent solutions for Intelligent cyber <br /> business
+                        </h1>
+                        <p class="main__masthead--text">
+                            Intelligent technologies to protect your business from cyberattacks, <br /> and digital solutions designed to meet your business needs
+                        </p>
+                        <button class="btn main__masthead--btn">Contact sales</button>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-right">
+                        <img class="btn main__masthead--img" src="images/header.svg" alt="" />
                     </div>
                 </div>
             </div>
         </header>
+        <section class="main__sponsers py-5 text-center">
+            <div class="container-fluid">
+                <p class="main__sponsers--title">Powered by</p>
+                <div class="main__sponsers__icons row justify-content-center align-items-center">
+                    <div class="col-12 col-md-2">
+                        <img src="images/amd.svg" alt="AMD" />
+                    </div>
+                    <div class="col-12 col-md-1 my-3 my-md-0">
+                        <img src="images/intel.svg" alt="INTEL" />
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <img src="images/supermicr.svg" alt="SUPERMICR" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__features ">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center text-md-left">
+                        <div class="main__features__item">
+                            <img class="main__features__item--img" src="images/feature1.svg" alt="">
+                            <p class="main__features__item--text">
+                                Safely move your infrastructure to the cloud without altering your architecture.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-left">
+                        <div class="main__features__item">
+                            <img class="main__features__item--img" src="images/feature2.svg" alt="">
+                            <p class="main__features__item--text">
+                                Count on the expertise of leading Saudi Arabia’s IT experts. No matter what is the complexity of your task, our experts are capable to handle it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-left">
+                        <div class="main__features__item">
+                            <img class="main__features__item--img" src="images/feature3.svg" alt="">
+                            <p class="main__features__item--text">
+                                We scale your resources and boost your business performance and processes. Only pay for what your business requires.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__services">
+            <div class="container-fluid">
+                <h1 class="main__services--title">Services</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="main__services__item">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4 class="main__services__item--title">
+                                        Co-Location
+                                    </h4>
+                                    <p class="main__services__item--text">
+                                        Cyberfilters offer a great environment through all organization platforms and infrastructure that will assure availability and reliability improving asset utilization of IT infrastructure.
+                                    </p>
 
-        <!-- Page Content -->
-        <section class="py-5">
-            <div class="container">
-                <h2 class="font-weight-light">Page Content</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+                                </div>
+                                <div class="col-3">
+                                    <div class="main__services__item--img">
+                                        <img src="images/service1.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="main__services__item--btn ">
+                                Contact sales
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="main__services__item">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4 class="main__services__item--title">
+                                        Dedicated Servers
+                                    </h4>
+                                    <p class="main__services__item--text">
+                                        Activate your business strategy smoothly with rock-solid performance and reliability. Unleashing the computer power and availability with our dedicated servers. The scalable servers are made to support resource-intensive production usage while offering
+                                        high service availability.
+                                    </p>
+
+                                </div>
+                                <div class="col-3">
+                                    <div class="main__services__item--img">
+                                        <img src="images/service2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="main__services__item--btn ">
+                                Contact sales
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="main__services__item">
+                            <div class="row">
+                                <div class="col-9">
+                                    <h4 class="main__services__item--title">
+                                        DDoS Protection
+                                    </h4>
+                                    <p class="main__services__item--text">
+                                        Every business is driven by the availability, integrity, and confidentiality of your website and online services. A possible Distributed Denial Of Service (DDoS) attack could wreak financial havoc, risk your customer’s data, and may ruin your reputation.
+
+                                    </p>
+
+                                </div>
+                                <div class="col-3">
+                                    <div class="main__services__item--img">
+                                        <img src="images/service3.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="main__services__item--btn ">
+                                Contact sales
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

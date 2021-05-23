@@ -22,6 +22,13 @@
 }
 
 @font-face {
+    font-family: "TajawalExtraBold";
+    src: url("../fonts/Tajawal-ExtraBold.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "TajawalLight";
     src: url("../fonts/Tajawal-Light.ttf") format("truetype");
     font-weight: 400;
@@ -29,12 +36,33 @@
 }
 
 //Variables
-$black1:#212022;
-$black2: #1E1D1F;
-$yellow: #FFC700;
+$black1: #212022;
+$black2: #1e1d1f;
+$gray1: #454446;
+$gray2: #444957;
+$yellow: #ffc700;
+$white: #fff;
+$defaultFontSize: 18px;
+* {
+    padding-bottom: 0;
+    margin: 0;
+}
+
 body {
-    font-family: 'TajawalRegular', sans-serif;
+    font-family: "TajawalMedium", sans-serif;
     background-color: $black1;
+    color: $white;
+    height: 1000000px;
+    font-size: $defaultFontSize;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $gray1;
+    }
 }
 
 .container-fluid {
@@ -50,9 +78,125 @@ body {
 .main {
     &__navbar {
         background-color: $black1;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         &__nav {
-            &__list {}
+            &__list {
+                &--item {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    a {
+                        padding-bottom: 0;
+                    }
+                    &:not(:last-child) {
+                        margin-right: 50px;
+                        @media (max-width: 991px) {
+                            margin-right: 0;
+                        }
+                    }
+                    &:last-child {
+                        background-color: $gray1;
+                        border-radius: 0px 7px;
+                        @media (max-width: 991px) {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__masthead {
+        min-height: 500px;
+        @media (min-width: 991px) {
+            height: 90.1vh;
+        }
+        &--title {
+            font-family: "TajawalExtraBold";
+            font-size: 48px;
+            @media (max-width: 991px) {
+                font-size: 35px;
+                margin-top: 100px;
+            }
+        }
+        &--text {
+            color: #f4f6fb;
+            font-family: "TajawalRegular";
+        }
+        &--btn {
+            background-color: #ffc700;
+            border-radius: 0px 7px;
+            color: #212022;
+            border: 0;
+            font-family: "TajawalBold";
+            padding: 10px 20px 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+        &--img {
+            @media (max-width: 991px) {
+                width: 100%;
+                margin: 50px auto 0;
+            }
+        }
+    }
+    &__sponsers {
+        &--title {
+            color: $gray2;
+        }
+    }
+    &__features {
+        background-color: $black2;
+        padding: 100px 0;
+        &__item {
+            padding: 0 20px;
+            &--text {
+                text-align: justify;
+                margin-top: 20px;
+                font-family: "TajawalRegular";
+            }
+        }
+    }
+    &__services {
+        background-color: $black2;
+        // padding: 100px 0;
+        &--title {
+            font-size: 36px;
+            margin-bottom: 50px;
+            font-family: "TajawalBold";
+        }
+        .col-md-4 {
+            padding: 0 20px !important;
+        }
+        &__item {
+            padding: 50px 30px;
+            background-color: #242528;
+            min-height: 411px;
+            max-height: auto;
+            &--title {
+                font-size: 24px;
+                font-family: "TajawalBold";
+                margin-bottom: 10px;
+            }
+            &--text {
+                text-align: justify;
+                font-family: "TajawalRegular";
+            }
+            &--img {
+                width: 100%;
+            }
+            &--btn {
+                background-color: #5c5e64;
+                border-radius: 0px 7px;
+                color: $white;
+                border: 0;
+                font-family: "TajawalBold";
+                padding: 10px 20px 5px;
+                // position: absolute;
+                // bottom: 40px;
+                &:focus {
+                    outline: none;
+                }
+            }
         }
     }
 }
