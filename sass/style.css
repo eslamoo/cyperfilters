@@ -38,12 +38,16 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "TajawalMedium", sans-serif;
   background-color: #212022;
   color: #fff;
-  height: 1000000px;
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -57,6 +61,89 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #454446;
+}
+
+.modal__header--close {
+  color: #ffc700;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  top: -17px;
+  font-size: 40px;
+}
+
+.modal__header--close:focus {
+  outline: none;
+}
+
+.modal__header--title {
+  font-family: "TajawalBold";
+  font-size: 24px;
+}
+
+.modal__body__form__formGroup--label {
+  font-family: "TajawalBold";
+  margin-bottom: 0;
+}
+
+.modal__body__form__formGroup--input {
+  background-color: transparent;
+  border-radius: 0px 7px;
+  border: 1px solid #575658;
+  color: #fff;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.modal__body__form__formGroup--input:focus {
+  outline: none;
+}
+
+.modal__body__form__formGroup--btn {
+  background-color: #ffc700;
+  border-radius: 0px 7px;
+  color: #212022;
+  border: 0;
+  width: 100%;
+  font-family: "TajawalBold";
+  padding: 10px 20px 5px;
+}
+
+.modal__body__form__formGroup--btn:focus {
+  outline: none;
+}
+
+.modal .modal-content {
+  border-radius: 0 20px;
+  background-color: #000;
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation: animatebottom 0.4s;
+          animation: animatebottom 0.4s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 .container-fluid {
@@ -174,6 +261,7 @@ body::-webkit-scrollbar-thumb {
 
 .main__services {
   background-color: #1e1d1f;
+  padding-bottom: 100px;
 }
 
 .main__services--title {
@@ -182,15 +270,10 @@ body::-webkit-scrollbar-thumb {
   font-family: "TajawalBold";
 }
 
-.main__services .col-md-4 {
-  padding: 0 20px !important;
-}
-
 .main__services__item {
   padding: 50px 30px;
   background-color: #242528;
   min-height: 411px;
-  max-height: auto;
 }
 
 .main__services__item--title {
@@ -219,5 +302,171 @@ body::-webkit-scrollbar-thumb {
 
 .main__services__item--btn:focus {
   outline: none;
+}
+
+.main__aboutUs {
+  padding: 100px 0;
+}
+
+.main__aboutUs--mainTitle {
+  color: #ffc700;
+  font-size: 36px;
+  font-family: "TajawalExtraBold";
+}
+
+.main__aboutUs--title {
+  font-family: "TajawalBold";
+  font-size: 24px;
+}
+
+.main__aboutUs--text {
+  text-align: justify;
+}
+
+.main__aboutUs--img {
+  background-color: #29282a;
+  padding: 50px;
+}
+
+@media (max-width: 991px) {
+  .main__aboutUs--img {
+    width: 100%;
+    margin: 5px auto 50px;
+  }
+}
+
+.main__resources {
+  padding: 100px 0;
+  background-color: #1e1d1f;
+}
+
+.main__resources--mainTitle {
+  color: #ffc700;
+  font-size: 36px;
+  font-family: "TajawalExtraBold";
+}
+
+.main__resources__item {
+  padding: 50px 30px;
+  background-color: #242528;
+}
+
+.main__resources__item--title {
+  font-size: 24px;
+  font-family: "TajawalBold";
+}
+
+.main__resources__item--text {
+  text-align: justify;
+}
+
+.main__faq {
+  padding: 100px 0;
+}
+
+.main__faq--mainTitle {
+  color: #ffc700;
+  font-size: 36px;
+  font-family: "TajawalExtraBold";
+  margin-bottom: 50px;
+}
+
+.main__faq .panel-group .panel {
+  background-color: #393b40;
+  border-radius: 0 7px;
+  -webkit-box-shadow: 0px 3px 20px 0px #0000001a;
+          box-shadow: 0px 3px 20px 0px #0000001a;
+  margin-bottom: 15px;
+}
+
+.main__faq .panel-title {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.main__faq .panel-title > a {
+  color: #ffc700;
+  display: block;
+  padding: 25px 45px 16px 15px;
+  font-family: "TajawalBold";
+  font-size: 24px;
+  text-decoration: none;
+  background-image: url(../images/plus.svg);
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+}
+
+.main__faq .panel-title > a:not(.collapsed) {
+  background-image: url(../images/minus.svg);
+}
+
+.main__faq .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  padding: 0px 15px 16px;
+}
+
+.main__contact {
+  padding: 0 0 200px;
+}
+
+.main__contact--text {
+  font-size: 18px;
+}
+
+.main__contact--btn {
+  background-color: #ffc700;
+  border-radius: 0px 7px;
+  color: #212022;
+  border: 0;
+  font-family: "TajawalBold";
+  padding: 10px 20px 5px;
+}
+
+.main__contact--btn:focus {
+  outline: none;
+}
+
+.main__footer {
+  background-color: #1e1d1f;
+  padding: 50px 0 20px;
+}
+
+.main__footer__links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.main__footer__links--link {
+  color: #fff;
+}
+
+.main__footer__buttons--button {
+  border: 2px solid #ffc700;
+  border-radius: 0 7px;
+  background-color: transparent;
+  color: #fff;
+  font-family: "TajawalBold";
+  padding: 7px 25px 3px;
+  -webkit-filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
+}
+
+.main__footer__buttons--button:focus {
+  outline: none;
+}
+
+.main__footer hr {
+  border-top: 1px solid #353535;
+}
+
+.main__footer--copyrights {
+  color: #726d77;
+}
+
+.main__footer--contactUs p {
+  color: #726d77;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
 }
 /*# sourceMappingURL=style.css.map */
