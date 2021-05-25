@@ -269,6 +269,10 @@ body::-webkit-scrollbar-thumb {
     outline: none;
 }
 
+.main__masthead--img {
+    mix-blend-mode: screen;
+}
+
 @media (max-width: 991px) {
     .main__masthead--img {
         width: 100%;
@@ -290,7 +294,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main__features__item--text {
-    text-align: justify;
     margin-top: 20px;
     font-family: "TajawalRegular";
 }
@@ -319,11 +322,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main__services__item--text {
-    text-align: justify;
     font-family: "TajawalRegular";
 }
 
-.main__services__item--img {
+.main__services__item--img img {
     width: 100%;
 }
 
@@ -357,13 +359,28 @@ body::-webkit-scrollbar-thumb {
     text-align: right;
 }
 
-.main__aboutUs--text {
-    text-align: justify;
+.main__aboutUs--text {}
+
+.main__aboutUs__bg {
+    background-color: #29282a;
+    padding: 50px 100px;
 }
 
-.main__aboutUs--img {
-    background-color: #29282a;
-    padding: 50px;
+@media (max-width: 991px) {
+    .main__aboutUs__bg {
+        padding: 30px 50px;
+    }
+}
+
+.main__aboutUs__bg--img {
+    width: 90%;
+}
+
+@media (max-width: 991px) {
+    .main__aboutUs__bg--img {
+        width: 100%;
+        margin: 5px auto 50px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -394,9 +411,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "TajawalBold";
 }
 
-.main__resources__item--text {
-    text-align: justify;
-}
+.main__resources__item--text {}
 
 .main__faq {
     padding: 100px 0;
