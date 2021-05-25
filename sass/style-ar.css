@@ -158,6 +158,42 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+.main__topbar {
+    background-color: #1e1d1f;
+    padding: 0.5rem 0;
+}
+
+.main__topbar .dropdown-toggle::after {
+    position: relative;
+    top: 2px;
+}
+
+.main__topbar .dropdown-menu {
+    background-color: #000;
+    border-radius: 0 20px;
+}
+
+.main__topbar .dropdown-item {
+    color: #fff;
+}
+
+.main__topbar .dropdown-item:focus,
+.main__topbar .dropdown-item:hover {
+    text-decoration: none;
+    background-color: #212022;
+}
+
+.main__topbar--btn {
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+    padding-top: 5px;
+}
+
+.main__topbar--btn:focus {
+    outline: none;
+}
+
 .main__navbar {
     background-color: #212022;
     padding: 0.5rem 0;

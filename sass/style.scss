@@ -153,6 +153,35 @@ body {
 
 // -----------------------
 .main {
+    &__topbar {
+        background-color: $black2;
+        padding: 0.5rem 0;
+        .dropdown-toggle::after {
+            position: relative;
+            top: 2px;
+        }
+        .dropdown-menu {
+            background-color: #000;
+            border-radius: 0 20px;
+        }
+        .dropdown-item {
+            color: #fff;
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                background-color: #212022;
+            }
+        }
+        &--btn {
+            background-color: transparent;
+            color: $white;
+            border: 0;
+            padding-top: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
     &__navbar {
         background-color: $black1;
         padding: 0.5rem 0;
