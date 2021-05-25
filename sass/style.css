@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb {
   border: 0;
   width: 100%;
   font-family: "TajawalBold";
-  padding: 10px 20px 5px;
+  padding: 7px 20px;
 }
 
 .modal__body__form__formGroup--btn:focus {
@@ -261,7 +261,7 @@ body::-webkit-scrollbar-thumb {
   color: #212022;
   border: 0;
   font-family: "TajawalBold";
-  padding: 10px 20px 5px;
+  padding: 7px 20px;
 }
 
 .main__masthead--btn:focus {
@@ -335,7 +335,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   border: 0;
   font-family: "TajawalBold";
-  padding: 10px 20px 5px;
+  padding: 7px 20px;
 }
 
 .main__services__item--btn:focus {
@@ -486,7 +486,7 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
   color: #fff;
   font-family: "TajawalBold";
-  padding: 7px 25px 3px;
+  padding: 7px 25px;
   -webkit-filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
 }
