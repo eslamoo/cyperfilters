@@ -271,6 +271,7 @@ body::-webkit-scrollbar-thumb {
 
 .main__masthead--img {
     mix-blend-mode: screen;
+    width: 34vw;
 }
 
 @media (max-width: 991px) {
