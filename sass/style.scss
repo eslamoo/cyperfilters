@@ -1,38 +1,38 @@
 // Global Styles
 //Fonts
 @font-face {
-  font-family: "TajawalRegular";
-  src: url("../fonts/Tajawal-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "TajawalRegular";
+    src: url("../fonts/Tajawal-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "TajawalMedium";
-  src: url("../fonts/Tajawal-Medium.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "TajawalMedium";
+    src: url("../fonts/Tajawal-Medium.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "TajawalBold";
-  src: url("../fonts/Tajawal-Bold.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "TajawalBold";
+    src: url("../fonts/Tajawal-Bold.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "TajawalExtraBold";
-  src: url("../fonts/Tajawal-ExtraBold.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "TajawalExtraBold";
+    src: url("../fonts/Tajawal-ExtraBold.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "TajawalLight";
-  src: url("../fonts/Tajawal-Light.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+    font-family: "TajawalLight";
+    src: url("../fonts/Tajawal-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 //Variables
@@ -44,406 +44,416 @@ $yellow: #ffc700;
 $white: #fff;
 $defaultFontSize: 18px;
 * {
-  padding-bottom: 0;
-  margin: 0;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "TajawalMedium", sans-serif;
-  background-color: $black1;
-  color: $white;
-  font-size: $defaultFontSize;
-  scroll-behavior: smooth;
-  &::-webkit-scrollbar {
-    width: 5px;
-  }
-  &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: $gray1;
-  }
+    font-family: "TajawalMedium", sans-serif;
+    background-color: $black1;
+    color: $white;
+    font-size: $defaultFontSize;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $gray1;
+    }
 }
 
 .modal {
-  &__header {
-    &--close {
-      color: $yellow;
-      background-color: transparent;
-      border: 0;
-      position: relative;
-      top: -17px;
-      font-size: 40px;
-      &:focus {
-        outline: none;
-      }
-    }
-    &--title {
-      font-family: "TajawalBold";
-      font-size: 24px;
-    }
-  }
-  &__body {
-    &__form {
-      &__formGroup {
-        &--label {
-          font-family: "TajawalBold";
-          margin-bottom: 0;
+    &__header {
+        &--close {
+            color: $yellow;
+            background-color: transparent;
+            border: 0;
+            position: relative;
+            top: -17px;
+            font-size: 40px;
+            &:focus {
+                outline: none;
+            }
         }
-        &--input {
-          background-color: transparent;
-          border-radius: 0px 7px;
-          border: 1px solid #575658;
-          color: $white;
-          padding: 5px 10px;
-          width: 100%;
-          &:focus {
-            outline: none;
-          }
+        &--title {
+            font-family: "TajawalBold";
+            font-size: 24px;
         }
-        &--btn {
-          background-color: #ffc700;
-          border-radius: 0px 7px;
-          color: #212022;
-          border: 0;
-          width: 100%;
-          font-family: "TajawalBold";
-          padding: 10px 20px 5px;
-          &:focus {
-            outline: none;
-          }
-        }
-      }
     }
-  }
-  .modal-content {
-    border-radius: 0 20px;
-    background-color: #000;
-  }
+    &__body {
+        &__form {
+            &__formGroup {
+                &--label {
+                    font-family: "TajawalBold";
+                    margin-bottom: 0;
+                }
+                &--input {
+                    background-color: transparent;
+                    border-radius: 0px 7px;
+                    border: 1px solid #575658;
+                    color: $white;
+                    padding: 5px 10px;
+                    width: 100%;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                &--btn {
+                    background-color: #ffc700;
+                    border-radius: 0px 7px;
+                    color: #212022;
+                    border: 0;
+                    width: 100%;
+                    font-family: "TajawalBold";
+                    padding: 10px 20px 5px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+    .modal-content {
+        border-radius: 0 20px;
+        background-color: #000;
+    }
 }
 
 .animate-bottom {
-  position: relative;
-  animation: animatebottom 0.4s;
+    position: relative;
+    animation: animatebottom 0.4s;
 }
 
 @keyframes animatebottom {
-  from {
-    bottom: -300px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
 }
 
 .container-fluid {
-  padding-left: 60px;
-  padding-right: 60px;
-  @media (max-width: 767px) {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
+    padding-left: 60px;
+    padding-right: 60px;
+    @media (max-width: 767px) {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
 }
 
 // -----------------------
 .main {
-  &__topbar {
-    background-color: $black2;
-    padding: 0.5rem 0;
-    .dropdown-toggle::after {
-      position: relative;
-      top: 2px;
-    }
-    .dropdown-menu {
-      background-color: #000;
-      border-radius: 0 20px;
-    }
-    .dropdown-item {
-      color: #fff;
-      &:focus,
-      &:hover {
-        text-decoration: none;
-        background-color: #212022;
-      }
-    }
-    &--btn {
-      background-color: transparent;
-      color: $white;
-      border: 0;
-      padding-top: 5px;
-      &:focus {
-        outline: none;
-      }
-    }
-  }
-  &__navbar {
-    background-color: $black1;
-    padding: 0.5rem 0;
-    &__nav {
-      &__list {
-        &--item {
-          font-size: 18px;
-          margin-bottom: 0;
-          a {
-            padding-bottom: 0;
-          }
-          &:not(:last-child) {
-            margin-right: 50px;
-            @media (max-width: 991px) {
-              margin-right: 0;
+    &__topbar {
+        background-color: $black2;
+        padding: 0.5rem 0;
+        .dropdown-toggle::after {
+            position: relative;
+            top: 2px;
+        }
+        .dropdown-menu {
+            background-color: #000;
+            border-radius: 0 20px;
+        }
+        .dropdown-item {
+            color: #fff;
+            &:focus,
+            &:hover {
+                text-decoration: none;
+                background-color: #212022;
             }
-          }
-          &:last-child {
-            background-color: $gray1;
+        }
+        &--btn {
+            background-color: transparent;
+            color: $white;
+            border: 0;
+            padding-top: 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__navbar {
+        background-color: $black1;
+        padding: 0.5rem 0;
+        &__nav {
+            &__list {
+                &--item {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    a {
+                        padding-bottom: 0;
+                    }
+                    &:not(:last-child) {
+                        margin-right: 50px;
+                        @media (max-width: 991px) {
+                            margin-right: 0;
+                        }
+                    }
+                    &:last-child {
+                        background-color: $gray1;
+                        border-radius: 0px 7px;
+                        @media (max-width: 991px) {
+                            padding: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__masthead {
+        min-height: 500px;
+        @media (min-width: 991px) {
+            height: 90.1vh;
+        }
+        &--title {
+            font-family: "TajawalExtraBold";
+            font-size: 48px;
+            @media (max-width: 991px) {
+                font-size: 35px;
+                margin-top: 100px;
+            }
+        }
+        &--text {
+            color: #f4f6fb;
+            font-family: "TajawalRegular";
+        }
+        &--btn {
+            background-color: #ffc700;
             border-radius: 0px 7px;
-            @media (max-width: 991px) {
-              padding: 5px;
+            color: #212022;
+            border: 0;
+            font-family: "TajawalBold";
+            padding: 10px 20px 5px;
+            &:focus {
+                outline: none;
             }
-          }
         }
-      }
-    }
-  }
-  &__masthead {
-    min-height: 500px;
-    @media (min-width: 991px) {
-      height: 90.1vh;
-    }
-    &--title {
-      font-family: "TajawalExtraBold";
-      font-size: 48px;
-      @media (max-width: 991px) {
-        font-size: 35px;
-        margin-top: 100px;
-      }
-    }
-    &--text {
-      color: #f4f6fb;
-      font-family: "TajawalRegular";
-    }
-    &--btn {
-      background-color: #ffc700;
-      border-radius: 0px 7px;
-      color: #212022;
-      border: 0;
-      font-family: "TajawalBold";
-      padding: 10px 20px 5px;
-      &:focus {
-        outline: none;
-      }
-    }
-    &--img {
-      mix-blend-mode: screen;
-      width: 34vw;
-      @media (max-width: 991px) {
-        width: 100%;
-        margin: 50px auto 0;
-      }
-    }
-  }
-  &__sponsers {
-    &--title {
-      color: $gray2;
-    }
-  }
-  &__features {
-    background-color: $black2;
-    padding: 100px 0;
-    &__item {
-      padding: 0 20px;
-      &--text {
-        margin-top: 20px;
-        font-family: "TajawalRegular";
-      }
-    }
-  }
-  &__services {
-    background-color: $black2;
-    padding-bottom: 100px;
-    // padding: 100px 0;
-    &--title {
-      font-size: 36px;
-      margin-bottom: 50px;
-      font-family: "TajawalBold";
-    }
-    &__item {
-      padding: 50px 30px;
-      background-color: #242528;
-      min-height: 411px;
-      &--title {
-        font-size: 24px;
-        font-family: "TajawalBold";
-        margin-bottom: 10px;
-      }
-      &--text {
-        font-family: "TajawalRegular";
-      }
-      &--img {
-        img {
-          width: 100%;
+        &--img {
+            mix-blend-mode: screen;
+            width: 34vw;
+            @media (max-width: 991px) {
+                width: 100%;
+                margin: 50px auto 0;
+            }
         }
-      }
-      &--btn {
-        background-color: #5c5e64;
-        border-radius: 0px 7px;
-        color: $white;
-        border: 0;
-        font-family: "TajawalBold";
-        padding: 10px 20px 5px;
-        // position: absolute;
-        // bottom: 40px;
-        &:focus {
-          outline: none;
+    }
+    &__sponsers {
+        &--title {
+            color: $gray2;
         }
-      }
     }
-  }
-  &__aboutUs {
-    padding: 100px 0;
-    &--mainTitle {
-      color: $yellow;
-      font-size: 36px;
-      font-family: "TajawalExtraBold";
-    }
-    &--title {
-      font-family: "TajawalBold";
-      font-size: 24px;
-    }
-    &--text {
-    }
-    &__bg {
-      background-color: #29282a;
-      padding: 50px 100px;
-      @media (max-width: 991px) {
-        padding: 30px 50px;
-      }
-      &--img {
-        width: 90%;
-        @media (max-width: 991px) {
-          width: 100%;
-          margin: 5px auto 50px;
+    &__features {
+        background-color: $black2;
+        padding: 100px 0;
+        &__item {
+            padding: 0 20px;
+            &--text {
+                margin-top: 20px;
+                font-family: "TajawalRegular";
+            }
         }
-      }
     }
-  }
-  &__resources {
-    padding: 100px 0;
-    background-color: $black2;
-    &--mainTitle {
-      color: $yellow;
-      font-size: 36px;
-      font-family: "TajawalExtraBold";
-    }
-    &__item {
-      padding: 50px 30px;
-      background-color: #242528;
-      &--title {
-        font-size: 24px;
-        font-family: "TajawalBold";
-      }
-      &--text {
-      }
-    }
-  }
-  &__faq {
-    padding: 100px 0;
-    &--mainTitle {
-      color: $yellow;
-      font-size: 36px;
-      font-family: "TajawalExtraBold";
-      margin-bottom: 50px;
-    }
-    .panel-group .panel {
-      background-color: #393b40;
-      border-radius: 0 7px;
-      box-shadow: 0px 3px 20px 0px #0000001a;
-      margin-bottom: 15px;
-    }
-    .panel-title {
-      font-size: 14px;
-      margin-bottom: 0;
-    }
-    .panel-title > a {
-      color: $yellow;
-      display: block;
-      padding: 25px 45px 16px 15px;
-      font-family: "TajawalBold";
-      font-size: 24px;
-      text-decoration: none;
-      background-image: url(../images/plus.svg);
-      background-repeat: no-repeat;
-      background-position-x: 98%;
-      background-position-y: 50%;
-      &:not(.collapsed) {
-        background-image: url(../images/minus.svg);
-      }
-    }
-    .panel-default > .panel-heading + .panel-collapse > .panel-body {
-      padding: 0px 15px 16px;
-    }
-  }
-  &__contact {
-    padding: 0 0 200px;
-    &--text {
-      font-size: 18px;
-    }
-    &--btn {
-      background-color: #ffc700;
-      border-radius: 0px 7px;
-      color: #212022;
-      border: 0;
-      font-family: "TajawalBold";
-      padding: 10px 20px 5px;
-      &:focus {
-        outline: none;
-      }
-    }
-  }
-  &__footer {
-    background-color: $black2;
-    padding: 50px 0 20px;
-    &__links {
-      li {
-        list-style: none;
-        margin-bottom: 10px;
-      }
-      &--link {
-        color: $white;
-      }
-    }
-    &__buttons {
-      &--button {
-        border: 2px solid #ffc700;
-        border-radius: 0 7px;
-        background-color: transparent;
-        color: $white;
-        font-family: "TajawalBold";
-        padding: 7px 25px 3px;
-        filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
-        &:focus {
-          outline: none;
+    &__services {
+        background-color: $black2;
+        padding-bottom: 100px;
+        // padding: 100px 0;
+        &--title {
+            font-size: 36px;
+            margin-bottom: 50px;
+            font-family: "TajawalBold";
         }
-      }
+        &__item {
+            padding: 50px 30px;
+            background-color: #242528;
+            min-height: 411px;
+            &--title {
+                font-size: 24px;
+                font-family: "TajawalBold";
+                margin-bottom: 10px;
+            }
+            &--text {
+                font-family: "TajawalRegular";
+            }
+            &--img {
+                img {
+                    width: 100%;
+                }
+            }
+            &--btn {
+                background-color: #5c5e64;
+                border-radius: 0px 7px;
+                color: $white;
+                border: 0;
+                font-family: "TajawalBold";
+                padding: 10px 20px 5px;
+                // position: absolute;
+                // bottom: 40px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
     }
-    hr {
-      border-top: 1px solid #353535;
+    &__aboutUs {
+        padding: 100px 0;
+        &--mainTitle {
+            color: $yellow;
+            font-size: 36px;
+            font-family: "TajawalExtraBold";
+        }
+        &--title {
+            font-family: "TajawalBold";
+            font-size: 24px;
+        }
+        &--text {}
+        &__bg {
+            background-color: #29282a;
+            padding: 50px 100px;
+            @media (max-width: 991px) {
+                padding: 30px 50px;
+            }
+            &--img {
+                width: 90%;
+                @media (max-width: 991px) {
+                    width: 100%;
+                    margin: 5px auto 50px;
+                }
+            }
+        }
     }
-    &--copyrights {
-      color: #726d77;
+    &__resources {
+        padding: 100px 0;
+        background-color: $black2;
+        &--mainTitle {
+            color: $yellow;
+            font-size: 36px;
+            font-family: "TajawalExtraBold";
+        }
+        &__item {
+            padding: 50px 30px;
+            background-color: #242528;
+            &--title {
+                font-size: 24px;
+                font-family: "TajawalBold";
+            }
+            &--text {}
+        }
     }
-    &--contactUs {
-      p {
-        color: #726d77;
-        margin-right: 10px;
-        position: relative;
-        top: 2px;
-      }
+    &__faq {
+        padding: 100px 0;
+        &--mainTitle {
+            color: $yellow;
+            font-size: 36px;
+            font-family: "TajawalExtraBold";
+            margin-bottom: 50px;
+        }
+        .panel-group .panel {
+            background-color: #393b40;
+            border-radius: 0 7px;
+            box-shadow: 0px 3px 20px 0px #0000001a;
+            margin-bottom: 15px;
+        }
+        .panel-title {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        .panel-title>a {
+            color: $yellow;
+            display: block;
+            padding: 25px 45px 16px 15px;
+            font-family: "TajawalBold";
+            font-size: 24px;
+            text-decoration: none;
+            background-image: url(../images/plus.svg);
+            background-repeat: no-repeat;
+            background-position-x: 98%;
+            background-position-y: 50%;
+            &:not(.collapsed) {
+                background-image: url(../images/minus.svg);
+            }
+        }
+        .panel-default>.panel-heading+.panel-collapse>.panel-body {
+            padding: 0px 15px 16px;
+        }
     }
-  }
+    &__contact {
+        padding: 0 0 200px;
+        &--text {
+            font-size: 18px;
+        }
+        &--btn {
+            background-color: #ffc700;
+            border-radius: 0px 7px;
+            color: #212022;
+            border: 0;
+            font-family: "TajawalBold";
+            padding: 10px 20px 5px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__footer {
+        background-color: $black2;
+        padding: 50px 0 20px;
+        &__links {
+            li {
+                list-style: none;
+                margin-bottom: 10px;
+            }
+            &--link {
+                color: $white;
+            }
+        }
+        &__buttons {
+            &--button {
+                border: 2px solid #ffc700;
+                border-radius: 0 7px;
+                background-color: transparent;
+                color: $white;
+                font-family: "TajawalBold";
+                padding: 7px 25px 3px;
+                filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.1));
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        hr {
+            border-top: 1px solid #353535;
+        }
+        &--copyrights {
+            color: #726d77;
+        }
+        &--contactUs {
+            p {
+                color: #726d77;
+                margin-right: 10px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg>.container,
+    .navbar-expand-lg>.container-fluid,
+    .navbar-expand-lg>.container-lg,
+    .navbar-expand-lg>.container-md,
+    .navbar-expand-lg>.container-sm,
+    .navbar-expand-lg>.container-xl {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
 }
